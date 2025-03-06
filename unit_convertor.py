@@ -22,7 +22,7 @@ def convert_units(value,unit_from,unit_to):
 # Title of the app
 st.title("Unit Convertor")
 
-value = st.number_input("Enter the value you want to convert")
+value = st.number_input("Enter the value you want to convert",min_value=1.0 , step=1.0)
 
 # dropdown for selecting the unit to convert from
 unit_from = st.selectbox("Convert from:", ["meters" , "kilometers" , "grams" , "kilograms"])
